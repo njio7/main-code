@@ -40,5 +40,6 @@ After that, open the C# script and insert these 4 lines of code inside the "publ
 
 This creates static values that we can call upon and modify in the future.
 
-This code below allows the camera to maintain a specific distance from the player
+This code below allows the camera to maintain a specific distance from the player which is usefull for simple camera tracking.
 ![image](https://github.com/user-attachments/assets/df0ca481-57ed-4b90-bfcb-e37216f69ab1)
+

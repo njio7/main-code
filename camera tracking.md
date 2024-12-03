@@ -1,10 +1,9 @@
 # Camera Tracking Tutorial
 
-You will need to know how to
+You will need to know how to:
 - How to create objects
 - How to create C# scripts
 - 
--
 
 First, create an object and a plane. in my example i will be using a cube and setting the scene up like so:
 ![image](https://github.com/user-attachments/assets/887580cd-fa0a-4704-b1a8-a0f462b2f711)
@@ -44,7 +43,9 @@ This code below allows the camera to maintain a specific distance from the playe
 ![image](https://github.com/user-attachments/assets/df0ca481-57ed-4b90-bfcb-e37216f69ab1)
 
 
-the code below will call "trackedObject" and updaeSpeed
+the code below will call the position of our "trackedObject" (being the player object) and the "updateSpeed" for how fast the camera will move. 
+
+Time.Delta is referenceing the frame rate in unity to figure out how fast the camera should be moving while it tracks the camera. our default speed 
 
 ![image](https://github.com/user-attachments/assets/a97c34cb-32d1-4557-9269-c53885caa305)
 

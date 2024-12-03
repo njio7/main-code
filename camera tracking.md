@@ -43,3 +43,10 @@ This creates static values that we can call upon and modify in the future.
 This code below allows the camera to maintain a specific distance from the player which is usefull for simple camera tracking.
 ![image](https://github.com/user-attachments/assets/df0ca481-57ed-4b90-bfcb-e37216f69ab1)
 
+
+the code below will call "trackedObject" and updaeSpeed
+
+![image](https://github.com/user-attachments/assets/a97c34cb-32d1-4557-9269-c53885caa305)
+
+
+

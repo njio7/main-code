@@ -43,11 +43,20 @@ This code below allows the camera to maintain a specific distance from the playe
 ![image](https://github.com/user-attachments/assets/df0ca481-57ed-4b90-bfcb-e37216f69ab1)
 
 
-the code below will call the position of our "trackedObject" (being the player object) and the "updateSpeed" for how fast the camera will move. 
+The code below will call the position of our "trackedObject" (being the player object) and the "updateSpeed" for how fast the camera will move. 
 
-Time.Delta is referenceing the frame rate in unity to figure out how fast the camera should be moving while it tracks the camera. our default speed 
+Time.Delta is referenceing the frame rate in unity to figure out how fast the camera should be moving while it tracks the camera.
 
 ![image](https://github.com/user-attachments/assets/a97c34cb-32d1-4557-9269-c53885caa305)
+
+"updateSpeed" bvhvh
+
+"transform.position" is telling the camera to move every frame and Vector3.MoveTowards allows the camera to follow the player object across the axes.
+
+"trackedObject" is refrenceing the object that we had initially paired to our camera, which is our player object.
+
+Our default speed for the camera is 3 units pers second, which we set at the beginning of the code. This can be changed outside of microsoft visual studio
+Because it is set as a public value which makes changing it's tracking speed a lot easier as there isn't a need to open the script each time to change it.
 
 
 

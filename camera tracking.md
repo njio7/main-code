@@ -49,7 +49,7 @@ Time.Delta is referenceing the frame rate in unity to figure out how fast the ca
 
 ![image](https://github.com/user-attachments/assets/a97c34cb-32d1-4557-9269-c53885caa305)
 
-"updateSpeed" bvhvh
+~~"updateSpeed" gets referenced by unity every frame that unity is running. If unity is set to run at 60fps, then the camera will update it's position once every 1/60th of a second. Using "deltaTime" will check if the camera is being updated every 1/60th of a second and ties it's update speed to the framerate.~~
 
 "transform.position" is telling the camera to move every frame and Vector3.MoveTowards allows the camera to follow the player object across the axes.
 
@@ -57,6 +57,8 @@ Time.Delta is referenceing the frame rate in unity to figure out how fast the ca
 
 Our default speed for the camera is 3 units pers second, which we set at the beginning of the code. This can be changed outside of microsoft visual studio
 Because it is set as a public value which makes changing it's tracking speed a lot easier as there isn't a need to open the script each time to change it.
+
+IF you want your changes to the camera speed to be permanent, you can go into the code and change 
 
 
 

@@ -5,6 +5,8 @@ You will need to know how to:
 - How to create C# scripts
 - How to assign objects
 
+## make sure to save your project often in order to not lose any progress!
+
 First, create an object and a plane. in my example i will be using a cube and setting the scene up like so:
 ![image](https://github.com/user-attachments/assets/887580cd-fa0a-4704-b1a8-a0f462b2f711)
 
@@ -51,7 +53,11 @@ Time.Delta is referenceing the frame rate in unity to figure out how fast the ca
 
 ![image](https://github.com/user-attachments/assets/a97c34cb-32d1-4557-9269-c53885caa305)
 
-~~"updateSpeed" gets referenced by unity every frame that unity is running. If unity is set to run at 60fps, then the camera will update it's position once every 1/60th of a second. Using "deltaTime" will check if the camera is being updated every 1/60th of a second and ties it's update speed to the framerate.~~
+both "Time.deltaTime" and "updateSpeed" are used together make sure that unity is tracking the object every frame that unity is running. using default settings, unity runs at 60fps
+meaning that each frame in unity is 1/60th of a second. 
+
+having unity update the camera's position every 60 frames makes the camera movment look better and ensures that (as long as your player object isn't moving too fast,) your camera movment
+is consistent and smooth as it tracks the player object.
 
 "transform.position" is telling the camera to move every frame and Vector3.MoveTowards allows the camera to follow the player object across the axes.
 
@@ -73,4 +79,5 @@ If you want your changes to the camera speed to be permanent, you can go into th
 ![image](https://github.com/user-attachments/assets/445db202-07b1-4d9a-be80-0518e36dec3a)
 
 that should be all for this tutorial. if you press play on your scene you should now see that the camera is trackiig the player object as it moves. 
+
 
